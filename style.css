@@ -1,0 +1,103 @@
+@font-face {
+    font-family: my-cool-font;
+    src: url(./Norse-Bold.otf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+.first-container{
+    flex: 1.2 1 0;
+    background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    position: relative;
+}
+.logo-container{
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    top: calc(100vh*0.2);
+    background-image: url("./images/odin-lined.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+.logo-text{
+    font-family: my-cool-font;
+    color:white;
+    font-size: 80px;
+    position: absolute;
+    right: calc(100%*0.28);
+    top: calc(100%*0.3);
+}
+
+
+
+.second-container{
+    flex: 2 1 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(240, 240, 240);
+    padding: 150px 0px 75px 50px;
+}
+.text{
+    width: 68%;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.form-row, h2{
+    margin: 20px 0px 0px 50px;
+    display: flex;
+    gap: 200px;
+}
+
+label{
+    color: #003366;
+    font-size: 13px;
+}
+input{
+    border: 2px solid #E5E7EB;
+    border-radius: 0.5rem;
+    padding: 5px;
+    width: 250px;
+}
+
+.last{
+    margin-top: 20px;
+    padding: 20px 50px;
+    background-color: rgb(240, 240, 240);
+    flex-grow: 1;
+}
+button{
+    background-color:#596D48;
+    border-radius: 0.5rem;
+    padding: 10px 45px;
+    color:white;
+    border: 2px solid #E5E7EB;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+    color:#596D48;
+}
+

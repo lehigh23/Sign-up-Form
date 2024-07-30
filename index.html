@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script src="./script.js" defer></script>
     <div class="first-container">
         <div class="logo-container">
             <div class="logo-text">ODIN</div>
         </div>
     </div>
+
     <div class="second-container">
 
         <header>
@@ -26,6 +28,7 @@
 
 
         <form action="" method="get">
+            <div class="data">
             <h2>Let's do this!</h2>
 
             <div class="form-row">
@@ -36,7 +39,6 @@
                 <label for="surname">Last Name
                 <input type="text" id="surname" name="lastName" style="display: block;" required>
                 </label>
-
             </div>
 
             <div class="form-row">
@@ -53,13 +55,15 @@
             <div class="form-row">
                 <label for="password">Password
                 <input type="password" id="password" name="password" style="display: block;" required>
+                <p class="err"></p>
                 </label>
 
                 <label for="verification">Confirm Password
                 <input type="password" id="verification" name="passwordToVerify" style="display: block;" required>
                 </label>
-
             </div>
+
+        </div>
 
             <div class="last">
                 <button type="submit">Create Account</button>
